@@ -1,1 +1,78 @@
-<html> <head> <title></title> <style> body{ background: url('https://wallpaperaccess.com/full/2018529.jpg') no-repeat; background-size: 100%; display: flex; align-items: center; justify-content: center; color: #fff; } div{ display: flex; flex-direction: column; align-items: center; } h2{ font-weight: normal } </style> </head> <body> <div> <h2> Modo de Manutenção Ativado </h2> <label> Voltaremos em Breve... </label> </div> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Meu Site</title>
+</head>
+
+<body>
+
+
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+
+
+        <div class="content">
+            <h2>Ola,<br>Eu sou<span> Mateus Fernandes</span></h2>
+            <p>Graduando em Tecnologia da Informação pela Universidade Federal Rural do Semi-Árido - UFERSA, Interessado
+                em Programação Reativa, e todo o ecossistema de "Métricas" como Data Sciense, Data Enginner e Áreas
+                afins Utilizando Python.
+            </p>
+            <!-- <a href="#">Know More</a> -->
+        </div>
+
+        <ul class="sci">
+            <li><a href="https://github.com/mateustech" target="_blank"><img src="./assents/github.png"
+                        alt="github"></a></li>
+            <li><a href="https://www.instagram.com/mateusxsuzane/" target="_blank"><img src="./assents/instagram.png"
+                        alt="instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/mateus-fernandes-costa-0955b1196/" target="_blank"><img
+                        src="./assents/linkedin.png" alt="linkedin"></a></li>
+            <li><a href="#" target="_blank"><img src="./assents/telegram.png" alt="telegram"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#" onclick="toggle()">Home</a></li>
+            <li><a href="#loader" onclick="toggle()">Experiência</a></li>
+            <li><a href="#loader" onclick="toggle()">Formação</a></li>
+            <li><a href="#loader" onclick="toggle()">Skills</a></li>
+            <li><a href="#loader" onclick="toggle()">Certificações</a></li>
+            <li><a href="#loader" onclick="toggle()">Atividades Extras</a></li>
+        </ul>
+    </div>
+    <div id="loader">
+        <p>Estou Preparando Algo Legal para Colocar Aqui :)
+        </p>
+        <div class="loader">
+            <span>C</span>
+            <span>A</span>
+            <span>R</span>
+            <span>R</span>
+            <span>E</span>
+            <span>G</span>
+            <span>A</span>
+            <span>N</span>
+            <span>D</span>
+            <span>O</span>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function toggle() {
+            var sec = document.getElementById('sec')
+            var navigation = document.getElementById('navigation')
+            sec.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
